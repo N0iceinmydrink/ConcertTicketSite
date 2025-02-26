@@ -10,3 +10,23 @@ else{
 }
 }
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    let loginForm = document.querySelector('.login-box');
+    let signupForm = document.querySelector('.signup-box');
+
+    // Initially hide the sign-up form
+    signupForm.style.display = "none";
+
+    document.querySelector('a[href="#"]').addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        loginForm.style.display = "none";
+        signupForm.style.display = "block";
+    });
+
+    document.getElementById("showLogin").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        loginForm.style.display = "block";
+        signupForm.style.display = "none";
+    });
+});
