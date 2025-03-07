@@ -27,5 +27,15 @@ export const tickets = [{
         {venue: "Purple Haze Rock Bar", date: "May 1, 2025", time: "7:45 PM"},
         {venue: "Dharan Stadium", date: "May 7, 2025", time: "6:45 PM"}
     ]
+},
+{
+    id: 4,
+    image: 'images/MartyFriedman.jpg',
+    name: 'Marty Friedman concert',
+    priceRupees: 10000,
+    shows: [
+        {venue: 'Rolling stones rock and bar', date: "October 31st, 2025", time: "6: 45 PM"},
+        {venue: 'Dashrat Rangashala', date: "December 25th, 2025", time: "9:30 PM"}
+    ]
 }
 ]
